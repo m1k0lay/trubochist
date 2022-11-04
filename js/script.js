@@ -1,6 +1,20 @@
 (function($) {
     
     "use strict";
+    var clientCard = document.querySelector(".clients-section .client-card");
+    var clientsFooter = document.querySelector(".clients-footer");
+
+
+    if (document.body.contains(clientCard)) {
+      clientCard.addEventListener("focus", function(evt){
+        evt.preventDefault();
+        for (var i = 0; i < clientsFooter.children.length; i++) {
+          if (evt.currentTarget.className == clientsFooter.children[i].className)
+            clientsFooter.getElementsByClassName("").style.display = "block";
+
+        }
+      });
+    }
 
     /* ==================== Preloader ==================== */
         function preloader_load() {
@@ -10,7 +24,6 @@
             }
         }
 
-     
       // Navbar
       var nav = $('.main-navigation');
       
@@ -21,7 +34,6 @@
               nav.removeClass("fixed-header");
           }
       });
-
 
       $(document).ready(function(){
           var dropDown = $('.dropdown');

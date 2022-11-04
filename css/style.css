@@ -2354,7 +2354,6 @@ Service Css Style
 }
 
 /* Clients section */
-
 .service-item.style-4 .thumb img {
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -2420,6 +2419,26 @@ Service Css Style
     background-color: rgba(252, 171, 3, 0.6);
     border-color: #fcab03;
     color: #fff;
+}
+
+.clients-footer .client-description {
+  visibility: hidden;
+}
+
+.client-card:hover .client-description .cola {
+  visibility: visible;
+}
+
+.client-card:hover .client-description .mega {
+  visibility: visible;
+}
+
+.client-card:hover .client-description .bautecs {
+  visibility: visible;
+}
+
+.client-card:hover .client-description .donenergo {
+  visibility: visible;
 }
 
 .service-item.style-4 .content {
