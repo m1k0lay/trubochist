@@ -946,10 +946,7 @@ a.dropdown-item.active {
     transition: all 0.4s ease-in-out;
 }
 
-
-
 /***Header Btn***/
-
 .header-btn {
     display: inline-block;
     float: right;
