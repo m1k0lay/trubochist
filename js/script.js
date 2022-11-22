@@ -1,5 +1,30 @@
+"use strict";
+
+// promo slider
+var ClientCards = document.querySelectorAll(".experience-section .client-card");
+var ClientDescriptions = document.querySelectorAll(".experience-footer .client-description");
+
+if (document.body.contains(ClientCards[0])) {
+  for (var i = 0; i < ClientCards.length; i++) {
+    ClientCards[i].addEventListener("click", function(evt){
+      evt.preventDefault();
+      var currentClientDescription = document.querySelector(".experience-footer .client-description-current");
+      var currentClientCard = document.querySelector(".experience-section .client-card-current");
+      var activeClientCardNumber = Array.prototype.slice.call(ClientCards).indexOf(evt.target);
+
+      currentClientDescription.classList.remove("client-description-current");
+      currentClientCard.classList.remove("client-card-current");
+      if (activeClientCardNumber > ClientDescriptions.length-1) {
+        ClientDescriptions[ClientDescriptions.length-1].classList.add("client-description-current");
+      } else {
+        ClientDescriptions[activeClientCardNumber].classList.add("client-description-current");
+      }
+      ClientCards[activeClientCardNumber].classList.add("client-card-current");
+    });
+  }
+}
+
 (function($) {
-    
     "use strict";
     var clientCard = document.querySelector(".clients-section .client-card");
     var clientsFooter = document.querySelector(".clients-footer");
@@ -665,6 +690,3 @@
 
 
 })(window.jQuery);
-
-    
-       
