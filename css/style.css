@@ -870,9 +870,10 @@ font-size:20px;
 }
 
 .header .navbar-nav {
+    border-left: 1px solid rgba(255, 255, 255, 0.19);
     border-right: 1px solid rgba(255, 255, 255, 0.19);
-    margin-right: 24px;
-    padding-right: 34px;
+    margin: 0 25px 0 25px;
+    padding: 0 30px 0 30px;
     position: relative;
     text-shadow: 1px 1px 1px #000;
 }
@@ -941,6 +942,11 @@ a.dropdown-item.active {
 
 .header .navbar {
   background-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbar>.container, 
+.navbar>.container-fluid {
+  justify-content: center;
 }
 
 .navbar .logo-img {
@@ -2615,8 +2621,8 @@ Service Css Style
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   margin-bottom: 30px;
-  width: 350px;
-  height: 200px;
+  min-width: 240px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2666,6 +2672,10 @@ input[type=radio].visually-hidden {
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
+}
+
+.experience-footer .experience-header {
+  font-size: 18px;
 }
 
 .experience-footer .client-description {
