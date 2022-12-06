@@ -704,8 +704,9 @@ a.scrollup:focus i {
   text-align:center;
   font-family: "Oswald",sans-serif;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .top-bar .contact-info ul {
@@ -748,6 +749,10 @@ a.scrollup:focus i {
     Main Slider Style Two Css
 =====*****=====*****=====*****=====*****/
 
+.section-footer .footer-note {
+  font-size: 18px;
+}
+
 .header.header-style-2  .menu-style.bg-transparent {
     background-color: rgba(255, 255, 255, 1) !important;
 }
@@ -757,11 +762,8 @@ a.scrollup:focus i {
   letter-spacing: 1px;
   font-size: 20px;
   text-transform: uppercase;
-
   color: #fff;
 }
-
-
 
 .header.header-style-2 .menu-style.bg-transparent .navbar-nav li a.nav-link {
     color: #091426;
@@ -861,7 +863,7 @@ a.scrollup:focus i {
 .header .main-navigation.animated .navbar-nav li a {
     font-family: "Oswald",sans-serif;
     letter-spacing: 1px;
-font-size:20px;
+    font-size:20px;
     text-transform: uppercase;
 }
 
@@ -1212,6 +1214,13 @@ a.dropdown-item.active {
   bottom: 50px;
   text-align: center;
   width: 100%;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 14px;
 }
 
 /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
@@ -2674,10 +2683,6 @@ input[type=radio].visually-hidden {
     clip-path: inset(100%);
 }
 
-.experience-footer .experience-header {
-  font-size: 18px;
-}
-
 .experience-footer .client-description {
   display: none;
   text-align: center;
@@ -3793,7 +3798,17 @@ Content Divider Css Style
 }
 
 .contact-divider .contact-item h5 {
-    color: #fcab03;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #fcab03;
+}
+
+.contact-divider .contact-item h4 {
+    color: #9c9c9c;
     letter-spacing: 0.9px;
     margin-bottom: 14px;
     text-transform: uppercase;
