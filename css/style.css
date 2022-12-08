@@ -40,7 +40,6 @@ Creation Date: 8 October 2018
     01. IMPORTED STYLE CSS
 =====*****=====*****=====*****=====*****/
 
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700');
 
 
@@ -682,6 +681,24 @@ a.scrollup:focus i {
     Main Slider Style Css
 =====*****=====*****=====*****=====*****/
 
+.reagent-card {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+}
+
+.reagent-card .reagent-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.reagent-card .reagent-title {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
 .header-style-1 {
     background-color: rgba(255, 255, 255, 0.09);
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -1205,22 +1222,20 @@ a.dropdown-item.active {
     width: 100% !important;
 }
 
-.carousel-item .slide-title {
-  top: 50%;
-}
-
-.carousel .carousel-footer {
+.carousel .title-caption {
   position: absolute;
-  bottom: 50px;
   text-align: center;
   width: 100%;
+  top: 50%;
+  z-index: 1;
 }
 
-.footer-header {
+.slider-title .title-caption {
   text-transform: uppercase;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
-  font-size: 14px;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
