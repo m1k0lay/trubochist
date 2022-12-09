@@ -969,7 +969,7 @@ a.dropdown-item.active {
 }
 
 .navbar .logo-img {
-  width: px;
+  width: 146px;
   height: 100px;
 }
 
@@ -1234,8 +1234,8 @@ a.dropdown-item.active {
   text-transform: uppercase;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 32px;
+  line-height: 48px;
 }
 
 /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
