@@ -700,8 +700,6 @@ a.scrollup:focus i {
 }
 
 .header-style-1 {
-    background-color: rgba(255, 255, 255, 0.09);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     left: 0;
     position: absolute;
     top: 0;
@@ -777,7 +775,7 @@ a.scrollup:focus i {
 .navbar .nav-link {
   font-family: "Oswald",sans-serif;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -823,6 +821,24 @@ a.scrollup:focus i {
 }
 
 /* header style responsive start */
+
+@media (max-width: 992px) {
+  .container .navbar-brand {
+      order: 1;
+    }
+
+  .container .call-us {
+      order: 2;
+    }
+
+    .container .navbar-nav {
+      order: 3;
+    }
+  }
+
+  .header .bg-transparent {
+    position: initial;
+  }
 
 @media only screen and (min-width: 334px) and (max-width: 767px) {
     .top-bar .contact-info{
@@ -965,7 +981,7 @@ a.dropdown-item.active {
 
 .navbar>.container, 
 .navbar>.container-fluid {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .navbar .logo-img {
@@ -975,6 +991,7 @@ a.dropdown-item.active {
 
 .navbar .call-us {
   background-color:rgba(252, 171, 3, 0.75);
+  width: 200px;
 }
 
 .navbar .call-us:hover {
@@ -1222,12 +1239,8 @@ a.dropdown-item.active {
     width: 100% !important;
 }
 
-.carousel .title-caption {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: 50%;
-  z-index: 1;
+.header .slider-title {
+  margin-top: initial;
 }
 
 .slider-title .title-caption {
@@ -1236,6 +1249,10 @@ a.dropdown-item.active {
   text-shadow: 1px 1px 1px #000;
   font-size: 32px;
   line-height: 48px;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  z-index: 1;
 }
 
 /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
@@ -1949,6 +1966,12 @@ a.dropdown-item.active {
 /* RESPONSIVE
 /*------------------------------------------------------*/
 
+@media (min-width: 992px) {
+  .header .slider-title {
+    margin-top: 100px;
+}
+}
+
 @media (max-width: 991px) {
     .sub-title {
 
@@ -1956,6 +1979,7 @@ a.dropdown-item.active {
     .bs-slider{
     }
 }
+
 
 /*---------- MEDIA 480px ----------*/
 @media  (max-width: 768px) {
@@ -1978,7 +2002,6 @@ a.dropdown-item.active {
     .carousel-indicators {
       display: none;
     }
-
 }
 
 .btn-slider {
@@ -2193,13 +2216,13 @@ a.btn-primary {
     transition: all 0.3s;
 }
 
-
 .gallery-item .gallery-hover {
     top: 50%;
     left: 50%;
     height: 0;
     width: 0;
 }
+
 .gallery-item:hover .gallery-hover {
     top: 0;
     height: 100%;
@@ -2226,7 +2249,6 @@ a.btn-primary {
     width: 100% !important;
 }
 
-
 .gallery-hover .gallery-btn {
     position: absolute;
     margin-top: -55px;
@@ -2244,6 +2266,7 @@ a.btn-primary {
     text-align: center;
     color: #FFF;
 }
+
 .gallery-info {
     opacity: 0;
 }
@@ -2270,39 +2293,32 @@ a.btn-primary {
 }
 
 /*gutter*/
-
 .gallery.gutter .gallery-item {
     padding: 10px;
 }
 
 
 /*portfolio 2 grid*/
-
 .gallery.col-2 .gallery-item {
     width: 49.99%;
 }
 
-
 /*portfolio 3 grid*/
-
 .gallery.col-3 .gallery-item {
     width: 33.3333333%;
 }
 
 /*portfolio 4 grid*/
-
 .gallery.col-4 .gallery-item {
     width: 24.98%;
 }
 
 /*portfolio 5 grid*/
-
 .gallery.col-5 .gallery-item {
     width: 19.99%;
 }
 
 /*portfolio 6 grid*/
-
 .gallery.col-6 .gallery-item {
     width: 16.666666667%;
 }
@@ -2324,16 +2340,15 @@ a.btn-primary {
     padding: 10px;
 }
 
-
 .gallery-filter li a{
     border: 1px solid transparent;
 }
+
 .gallery-filter li a:hover,
 .gallery-filter li.active a{
     color: #fcab03;
     border: 1px solid #fcab03;
 }
-
 
 /*****=====*****=====*****=====*****=====
   Particles Bacground style Css
@@ -2352,10 +2367,12 @@ canvas{
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
 .particles-bg {
   position: relative;
   overflow: hidden;
 }
+
 .particles-bg:before {
   content: "";
   position: absolute;
@@ -2366,20 +2383,20 @@ canvas{
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .particles-content {
   position: absolute;
   top: 35%;
   left: 25%;
 }
+
 .particles-content p {
   color: #333;
 }
 
-
 /*--------------------------------------------------------------
 Welcome Feature Css Style
 ----------------------------------------------------------------*/
-
 .welcome-feature {
     position: relative;
     margin-bottom: 30px;
@@ -2434,7 +2451,6 @@ Welcome Feature Css Style
 }
 
 /***Welcome Feature Css Style Two***/
-
 .welcome-feature-section.style-2 {
     margin-bottom: -122px;
     position: relative;
@@ -2481,7 +2497,6 @@ Welcome Feature Css Style
 }
 
 /* Welcome Section Three */
-
 .welcome-section-three {
     overflow: unset;
 }
@@ -2667,13 +2682,11 @@ Service Css Style
 .experience-list-item:hover,
 .experience-list-item:focus {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-
   transition: 0.25s;
 }
 
 .experience-list-item:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-
   transition: 0.25s;
 }
 
@@ -2709,7 +2722,6 @@ input[type=radio].visually-hidden {
 
 
 /* experience section */
-
 .service-item.style-4 .thumb img {
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -3234,8 +3246,8 @@ input[type=radio].visually-hidden {
 About Features Css Style
 ----------------------------------------------------------------*/
 
-.about-features {
-    
+.about-features .icon-box{
+    border-color:#000;
 }
 
 .about-features .content h1 {
@@ -3272,10 +3284,11 @@ About Features Css Style
 }
 
 .about-features .content .p-text {
-    margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
-    color: #000;
-   font-size:20px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 20px;
+  text-transform: initial;
 }
 
 .about-features .content .company-list {
@@ -4453,29 +4466,29 @@ Contact Css Style
     width: 100%;
 }
 
-.contact-text .contact-info .icon-box {
+.icon-box {
   border: 1px solid #eee;
   border-radius: 50%;
-  color: #fff;
   display: inline-block;
   float: left;
-  height: 34px;
-  line-height: 32px;
+  height: 12px;
+  line-height: 28px;
   text-align: center;
   vertical-align: top;
-  width: 34px;
+  width: 12px;
+  position: relative;
+  top: 8px;
+  margin-right: 10px;
 }
 
 .contact-text .contact-info h6 {
     color: #fff;
-    float: right;
     font-family: "Roboto",sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     position: relative;
     text-transform: uppercase;
     top: 8px;
-    width: 84%;
 }
 
 .contact-text .contact-info h6 a {
