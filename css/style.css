@@ -994,14 +994,14 @@ a.dropdown-item.active {
 }
 
 .header .logo-text {
-  font-family: "Arial Narrow",sans-serif;
+  font-family: "Helvetica Neue",sans-serif;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px #000;
   letter-spacing: 1px;
-  font-size: 56px;
+  font-size: 42px;
   line-height: 100px;
   font-weight: 700;
-  color: #fff;
+  color: #fdfdfd;
 }
 
 .navbar .call-us {
