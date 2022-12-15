@@ -984,9 +984,24 @@ a.dropdown-item.active {
   justify-content: space-evenly;
 }
 
+.logo {
+  display: flex;
+}
+
 .navbar .logo-img {
-  width: 146px;
+  width: 100px;
   height: 100px;
+}
+
+.header .logo-text {
+  font-family: "Arial Narrow",sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 1px;
+  font-size: 56px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #fff;
 }
 
 .navbar .call-us {
